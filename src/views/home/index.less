@@ -1,0 +1,129 @@
+.page {
+  position: relative;
+  // padding: 0 15px;
+  // background-color: #f5f5f5;
+
+  .stricky {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    // right: 15px;
+    // left: 15px;
+    z-index: 100;
+    background-color: #fff;
+
+    .dropdown {
+      padding-top: 10px;
+
+      /deep/ .van-dropdown-menu__title {
+        font-size: 18px;
+      }
+
+      /deep/ .van-dropdown-menu__title::after {
+        right: -10px;
+        margin-top: -8px;
+        border: 5px solid;
+        border-color: transparent transparent #dcdee0 #dcdee0;
+      }
+
+      /deep/.van-dropdown-menu__title--down::after {
+        margin-top: -2px;
+      }
+    }
+
+    .cell-group {
+      padding: 15px 15px 0 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 1px 0 rgba(100, 101, 102, .08);
+
+      .van-cell {
+        padding: 10px 0;
+        font-size: 16px;
+
+        .van-cell__value {
+          color: #FF1400;
+        }
+      }
+    }
+
+    .table-title {
+      position: fixed;
+      top: 250px;
+      left: 0;
+      right: 0;
+      padding: 0 15px;
+      font-size: 17px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+      border-top: 10px solid #f5f5f5;
+      z-index: 1;
+      background-color: #fff;
+    }
+  }
+
+  .pull-list {
+    padding-top: 267px;
+
+    .van-list {
+
+      .list-wrap {
+        padding: 0 15px;
+
+        li {
+          padding: 10px 0;
+          border-bottom: 1px solid #eee;
+
+          a {
+            color: #0085ff;
+            cursor: pointer;
+
+            span {
+              padding: 3px 5px;
+              border-radius: 4px;
+              border: 1px solid #0085ff;
+            }
+          }
+
+          .warn-text {
+            color: #FF0000;
+          }
+
+          .item {
+            flex: 1;
+          }
+        }
+
+      }
+    }
+
+    .van-pull-refresh__head {
+      img {
+        height: 50px;
+        padding: 5px 0;
+      }
+    }
+
+    .no-data-wrap {
+      .no-data {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+  }
+
+}
